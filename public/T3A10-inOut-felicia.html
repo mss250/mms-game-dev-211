@@ -1,0 +1,12 @@
+<h1 align=center>T3A10-inOut-felicia.html</h1>
+
+Store this input variable into x:<input id="myText01" type=text value=3><br><br>
+
+<input type=button value="run first" onclick="{
+     x = document.getElementById('myText01').value
+     xSquared = x * x 
+     //alert(x)
+     document.getElementById('mySpan01').innerHTML ='The <b> Square</b> of '+ x +' is ' + xSquared
+}"><br><br>
+
+Span output <span id="mySpan01" >...</Span><br><br>
