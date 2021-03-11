@@ -1,0 +1,99 @@
+<h1 align=center>T3A12-Decisions-if-Felicia.html<h1>
+
+<pre>
+|| means OR
+&& means AND
+! means NOT
+</pre><br>
+<input id="myText01" type=text value=3> <br>
+<input type="button" value="Show X" onclick="{
+     x = document.getElementById('myText01').value
+     myTemp = '.................'
+     if (x >= 2){myTemp = 'Something'}
+     document.getElementById('mySpan01').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan01">...</span><br><br>
+
+<input id="myText02a" type=text value=3 >
+<input id="myText02b" type=text value=-7 ><br>
+<input type=button value="Decide x and y" onclick="{
+     myX = document.getElementById('myText02a').value
+     myY = document.getElementById('myText02b').value
+     myTemp = '.................'
+     if (myX > 2 && myY <-4){myTemp = 'x greater than 2 and y less than -4'
+     } else {
+        myTemp = 'not'
+     }
+
+     document.getElementById('mySpan02').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan02">...</span><br><br>
+
+
+
+
+
+<input id="myText03" type=text value=6> <br>
+<input type="button" value="Decide x" onclick="{
+     x = document.getElementById('myText01').value
+     myTemp = '.................'
+     if (x >= 0){myTemp = 'x is greater than 0'} 
+     document.getElementById('mySpan03').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan03">...</span><br><br>
+
+
+<input id="myText04" type=text value=50> <br>
+<input type="button" value="Show" onclick="{
+     x = document.getElementById('myText04').value
+     myTemp = '...................'
+     if (x >= 7){myTemp = 'x>=7'}
+     document.getElementById('mySpan04').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan04">...</span><br><br>
+
+
+<input id="myText05" type=text value=9> <br>
+<input type="button" value="Show X" onclick="{
+     x = document.getElementById('myText05').value
+     myTemp = '.................'
+     if (x >=  0 && x < 100){myTemp = 'x is greater than 0 and less than 100'}
+     document.getElementById('mySpan05').innerHTML = myTemp                                                    
+}"><br>
+
+<span id="mySpan05">...</span><br><br>
+
+<input id="myText06" type=text value=1> <br>
+<input type="button" value="Show X" onclick="{
+     x = document.getElementById('myText06').value
+     myTemp = '.................'
+     if (x <6 || x <7){myTemp = 'x is less than 7 or greater than 7'}
+     document.getElementById('mySpan06').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan06">...</span><br><br>
+
+
+
+
+
+
+<input id="myText07a" type=text value=1 >
+<input id="myText07b" type=text value=-5 ><br>
+<input type=button value="Decide x and y" onclick="{
+     myX = document.getElementById('myText07a').value
+     myY = document.getElementById('myText07b').value
+     myTemp = '.................'
+     if (myX > 0 && myY <0){myTemp = 'x greater than 0 and y less than 0'
+     } else {
+        myTemp = 'not'
+     }
+
+     document.getElementById('mySpan07').innerHTML = myTemp                                                    
+}"><br>
+ 
+<span id="mySpan07">...</span><br><br>
