@@ -1,5 +1,8 @@
 
                         
+<html>
+<head>
+
 <script>
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
@@ -18,42 +21,165 @@ function myHitOther(my1,my2){
    }
 }
 
-</script>
+
+function myCheckAll(){
+
+  if(myHitOther('mySpan01', 'mySpan02')){
+    document.getElementById('mySpan02').style.left = '-400px'
+    document.getElementById('myTextScore').value = parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+  if(myHitOther('mySpan01', 'mySpan03')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+ if(myHitOther('mySpan01', 'mySpan10')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan11')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan12')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan13')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan14')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan15')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan16')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+  // your other checks go here
+
+  if(parseInt(document.getElementById('myTextLife').value)  <=0  ){    // life points at zero
+    alert('You Lose!')
+    location = 'final-game-felicia.html'    // refresh page
+  }
+
+  if(myHitOther('mySpan01', 'mySpan09')){
+    document.getElementById('mySpan09').style.left = '-400px'
+    alert('You Win!')
+    location = 'final-game-level-two-felicia.html'
+  }
 
 
 
-
-
-<h1 align=center>final-game-felicia.html</h1>
-
-
-
-<input type=button value="Move 10 pixels right" onClick="{
-   //alert( parseInt(document.getElementById('mySpan01').style.left) ) 
-                          
-document.getElementById('mySpan01').style.left = 
-parseInt(document.getElementById('mySpan01').style.left) + 10
-
-
-
-
-
-
-
-if(myHitOther('mySpan01', 'mySpan02')){
-  // alert('hit')
-  document.getElementById('mySpan02').style.left = '-400px'
 
 }
 
+
+</script>
+</head>
+
+
+<body  onKeyDown="{
+     let myAlphaKey = event.key
+     document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
+
+
+      if (myAlphaKey.toLowerCase() == 'arrowright') {
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+     }
+
+      if (myAlphaKey.toLowerCase() == 'd') {   // go right
+         document.getElementById('mySpan01').style.relative = parseInt(document.getElementById('mySpan01').style.relative) + 10
+         myCheckAll()
+      }
+
+
+}">
+
+
+<h3 align=center>final-game-felicia.html</h3>
+<hr>
+<h4  align=center> You are the LION. Try to hit the SLOTH without hitting the others</h4>
+
+Score: <input id="myTextScore" type=text value=0 ><br>
+
+Life: <input id="myTextLife" type=number value=20 ><br><br>
+
+
+<input type=button value="Move 10 pixels right" onClick="{
+                        
+  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+  myCheckAll()
                         
 }">
 
-<span id="mySpan01" style="position:absolute; left:100; top:150; width:6; height:12"> <img src="lion.gif"</span><br>
-<span id="mySpan02" style="position:absolute; left:200; top:10; width:45; height:30"> <img src="sloth.gif"</mySpan02><br>
+<input type=button value="Move 10 pixels Left" onClick="{
+                        
+  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
+  myCheckAll()
+                        
+}">
+
+<input type=button value="Move 10 pixels down" onClick="{
+                        
+  document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
+  myCheckAll()
+
+
+}">
+
+<input type=button value="Move 10 pixels up" onClick="{
+                        
+  document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
+  myCheckAll()
+
+
+}">
+
+
+<div id="myDiv01">...</div>
+
+
+<span title="1" id="mySpan01" style="position:absolute; left:100; top:250; width:45; height:30">
+   LION</span><br>
+
+<span title="2" id="mySpan02" style="position:absolute; left:200; top:250; width:45; height:30"> 
+   Span 2 </span><br>
+
+<span title="3" id="mySpan03" style="position:absolute; left:400; top:250; width:45; height:30"> 
+   Span 3 </span><br>
+
+<span title="9" id="mySpan09" style="position:absolute; left:450; top:250; width:45; height:30"> 
+   SLOTH </span><br>
+
+<span title="10" id="mySpan10" style="position:absolute; left:500; top:190; width:45; height:30"> 
+   Span 10 </span><br>
+
+<span title="11" id="mySpan11" style="position:absolute; left:200; top:195; width:45; height:30"> 
+   Span 11 </span><br>
+
+<span title="12" id="mySpan12" style="position:absolute; left:550; top:250; width:45; height:30"> 
+   Span 12 </span><br>
+
+<span title="13" id="mySpan13" style="position:absolute; left:600; top:260; width:45; height:30"> 
+   Span 13 </span><br>
+
+<span title="14" id="mySpan14" style="position:absolute; left:400; top:280; width:45; height:30"> 
+   Span 14 </span><br>
+
+<span title="15" id="mySpan15" style="position:absolute; left:700; top:350; width:45; height:30"> 
+   Span 15 </span><br>
+
+<span title="16" id="mySpan16" style="position:absolute; left:600; top:170; width:45; height:30"> 
+   Span 16 </span><br>
 
 
 
-
-
- 
+</body>
+</html>
