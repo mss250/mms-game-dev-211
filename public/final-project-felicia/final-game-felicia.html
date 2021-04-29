@@ -1,5 +1,7 @@
 
                         
+
+
 <html>
 <head>
 
@@ -87,10 +89,22 @@ if(myHitOther('mySpan01', 'mySpan16')){
 <body  onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
-
-
       if (myAlphaKey.toLowerCase() == 'arrowright') {
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+     }
+
+if (myAlphaKey.toLowerCase() == 'arrowleft') {
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
+         myCheckAll()
+     }
+if (myAlphaKey.toLowerCase() == 'arrowup') {
+         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
+         myCheckAll()
+     }
+
+if (myAlphaKey.toLowerCase() == 'arrowdown') {
+         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
          myCheckAll()
      }
 
@@ -98,8 +112,6 @@ if(myHitOther('mySpan01', 'mySpan16')){
          document.getElementById('mySpan01').style.relative = parseInt(document.getElementById('mySpan01').style.relative) + 10
          myCheckAll()
       }
-
-
 }">
 
 
@@ -130,16 +142,12 @@ Life: <input id="myTextLife" type=number value=20 ><br><br>
                         
   document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
   myCheckAll()
-
-
 }">
 
 <input type=button value="Move 10 pixels up" onClick="{
                         
   document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
   myCheckAll()
-
-
 }">
 
 
