@@ -1,7 +1,5 @@
 
                         
-
-
 <html>
 <head>
 
@@ -22,6 +20,9 @@ function myHitOther(my1,my2){
        return true
    }
 }
+
+
+  
 
 
 function myCheckAll(){
@@ -63,6 +64,13 @@ if(myHitOther('mySpan01', 'mySpan16')){
     document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
   }
 
+if(myHitOther('mySpan01', 'mySpan017')){
+   document.getElementById('mySpan01').style.left = 
+      parseInt(document.getElementById('mySpan01').style.left) - document.myXpixels
+}
+
+
+
   // your other checks go here
 
   if(parseInt(document.getElementById('myTextLife').value)  <=0  ){    // life points at zero
@@ -77,7 +85,7 @@ if(myHitOther('mySpan01', 'mySpan16')){
   }
 
 
-
+document.myXpixels = 10
 
 }
 
@@ -89,17 +97,16 @@ if(myHitOther('mySpan01', 'mySpan16')){
 <body  onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
+
+
       if (myAlphaKey.toLowerCase() == 'arrowright') {
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          myCheckAll()
      }
 
+
 if (myAlphaKey.toLowerCase() == 'arrowleft') {
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
-         myCheckAll()
-     }
-if (myAlphaKey.toLowerCase() == 'arrowup') {
-         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
          myCheckAll()
      }
 
@@ -108,10 +115,24 @@ if (myAlphaKey.toLowerCase() == 'arrowdown') {
          myCheckAll()
      }
 
+if (myAlphaKey.toLowerCase() == 'arrowup') {
+         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
+         myCheckAll()
+     }
+
       if (myAlphaKey.toLowerCase() == 'd') {   // go right
          document.getElementById('mySpan01').style.relative = parseInt(document.getElementById('mySpan01').style.relative) + 10
          myCheckAll()
       }
+
+if (myAlphaKey.toLowerCase() == 'a') {   // go left
+         document.getElementById('mySpan01').style.relative = parseInt(document.getElementById('mySpan01').style.relative) - 10
+         myCheckAll()
+      }
+
+
+
+
 }">
 
 
@@ -121,7 +142,7 @@ if (myAlphaKey.toLowerCase() == 'arrowdown') {
 
 Score: <input id="myTextScore" type=text value=0 ><br>
 
-Life: <input id="myTextLife" type=number value=20 ><br><br>
+Life: <input id="myTextLife" type=number value=10 ><br><br>
 
 
 <input type=button value="Move 10 pixels right" onClick="{
@@ -142,12 +163,16 @@ Life: <input id="myTextLife" type=number value=20 ><br><br>
                         
   document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
   myCheckAll()
+
+
 }">
 
 <input type=button value="Move 10 pixels up" onClick="{
                         
   document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
   myCheckAll()
+
+
 }">
 
 
@@ -187,6 +212,8 @@ Life: <input id="myTextLife" type=number value=20 ><br><br>
 <span title="16" id="mySpan16" style="position:absolute; left:600; top:170; width:45; height:30"> 
    Span 16 </span><br>
 
+<span title="17" id="mySpan17" style="position:absolute; left:300; top:200; width:45; height:30"> 
+   Span 17 </span><br>
 
 
 </body>
