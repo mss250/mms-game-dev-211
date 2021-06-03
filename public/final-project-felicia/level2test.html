@@ -1,0 +1,715 @@
+
+<html>
+<head>
+
+<body id="myBody" style="background-repeat:repeat; background-size:
+100%" background="desert2.gif">
+<script>
+
+
+
+
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+
+
+
+function myCheckAll(){
+
+  if(myHitOther('mySpan01', 'mySpan02')){
+    document.getElementById('mySpan02').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+  if(myHitOther('mySpan01', 'mySpan03')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+ if(myHitOther('mySpan01', 'mySpan10')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan11')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan12')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan13')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan14')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan15')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan16')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan17')){
+    document.getElementById('mySpan17').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan18')){
+    document.getElementById('mySpan18').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan19')){
+    document.getElementById('mySpan19').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan20')){
+    document.getElementById('mySpan20').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan21')){
+    document.getElementById('mySpan21').style.left = '-400px'
+    document.getElementById('myTextScore').value =
+parseInt(document.getElementById('myTextScore').value) + 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan22')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan23')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan24')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan25')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan26')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan27')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan28')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan29')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan30')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan32')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan33')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan34')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan35')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan36')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan37')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan38')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan39')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan40')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan41')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan42')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan43')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan44')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan45')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan46')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan47')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan48')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan49')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan50')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan51')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan52')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan53')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan54')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan55')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan56')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan57')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan58')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan59')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan60')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+if(myHitOther('mySpan01', 'mySpan61')){
+    document.getElementById('myTextLife').value =
+parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+  // your other checks go here
+
+  if(parseInt(document.getElementById('myTextLife').value)  <=0 ){
+// life points at zero
+    alert('You Lose!')
+    location = 'final-game-felicia.html'    // refresh page
+  }
+
+
+  if(myHitOther('mySpan01', 'mySpan09')){
+    document.getElementById('mySpan09').style.left = '-400px'
+    alert('You Win!')
+    location = 'final-game-level-two-felicia.html'
+  }
+
+
+
+}
+
+
+</script>
+</head>
+
+<h2> Hurry up! You only have <span id="countdowntimer">5 </span> Seconds left</h2>
+
+<script type="text/javascript">
+    var timeleft = 5;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+    //alert('You Lose!')}
+        clearInterval(downloadTimer);
+
+  
+    },1000);
+    
+ 
+
+
+</script>
+
+<body  onKeyDown="{
+     let myAlphaKey = event.key
+     document.getElementById('myDiv01').innerHTML = 'You typed: ' +
+myAlphaKey.toLowerCase()
+      if (myAlphaKey.toLowerCase() == 'arrowright') {
+         document.getElementById('mySpan01').style.left =
+parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+     }
+if (myAlphaKey.toLowerCase() == 'arrowleft') {
+         document.getElementById('mySpan01').style.left =
+parseInt(document.getElementById('mySpan01').style.left) - 10
+         myCheckAll()
+     }
+if (myAlphaKey.toLowerCase() == 'arrowdown') {
+         document.getElementById('mySpan01').style.top =
+parseInt(document.getElementById('mySpan01').style.top) + 10
+         myCheckAll()
+     }
+if (myAlphaKey.toLowerCase() == 'arrowup') {
+         document.getElementById('mySpan01').style.top =
+parseInt(document.getElementById('mySpan01').style.top) - 10
+         myCheckAll()
+     }
+      if (myAlphaKey.toLowerCase() == 'd') {   // go right
+         document.getElementById('mySpan01').style.relative =
+parseInt(document.getElementById('mySpan01').style.relative) + 10
+         myCheckAll()
+      }
+if (myAlphaKey.toLowerCase() == 'a') {   // go left
+         document.getElementById('mySpan01').style.relative =
+parseInt(document.getElementById('mySpan01').style.relative) - 10
+         myCheckAll()
+      }
+}">
+
+
+<h3 align=center>final-game-felicia.html</h3>
+<hr>
+<h4  align=center> You are the LION. Try to hit the SLOTH and collect
+pineapples without
+hitting the mountains.</h4>
+
+
+
+Score: <input id="myTextScore" type=text value=0 ><br>
+
+Life: <input id="myTextLife" type=number value=20 ><br><br>
+
+
+<input type=button value="Move 10 pixels right" onClick="{
+
+  document.getElementById('mySpan01').style.left =
+parseInt(document.getElementById('mySpan01').style.left) + 10
+  myCheckAll()
+
+}">
+
+<input type=button value="Move 10 pixels Left" onClick="{
+
+  document.getElementById('mySpan01').style.left =
+parseInt(document.getElementById('mySpan01').style.left) - 10
+  myCheckAll()
+
+}">
+
+<input type=button value="Move 10 pixels down" onClick="{
+
+  document.getElementById('mySpan01').style.top =
+parseInt(document.getElementById('mySpan01').style.top) + 10
+  myCheckAll()
+}">
+
+<input type=button value="Move 10 pixels up" onClick="{
+
+  document.getElementById('mySpan01').style.top =
+parseInt(document.getElementById('mySpan01').style.top) - 10
+  myCheckAll()
+}">
+
+
+<div id="myDiv01">...</div>
+
+
+<span title="1" id="mySpan01" style="z-index:10; position:absolute; left:80;
+top:250; width:45; height:30">
+   <img src="lion.gif" alt="lion" border="0" width="135" height="110"
+align="center" ></span><br>
+
+<span title="2" id="mySpan02" style="position:absolute; left:200;
+top:250; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="3" id="mySpan03" style="position:absolute; left:400;
+top:250; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="9" id="mySpan09" style="position:absolute; left:450;
+top:250; width:45; height:30">
+   <img src="sloth.gif" alt="sloth.gif" border="0" width="130"
+height="90" align="center" ></span><br>
+
+<span title="10" id="mySpan10" style="position:absolute; left:500;
+top:190; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="11" id="mySpan11" style="position:absolute; left:200;
+top:195; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="12" id="mySpan12" style="position:absolute; left:550;
+top:250; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="13" id="mySpan13" style="position:absolute; left:600;
+top:260; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="14" id="mySpan14" style="position:absolute; left:400;
+top:280; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="15" id="mySpan15" style="position:absolute; left:700;
+top:350; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="16" id="mySpan16" style="position:absolute; left:600;
+top:170; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="50" height="50"
+align="center" ></span><br>
+
+<span title="17" id="mySpan17" style="position:absolute; left:300;
+top:450; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="18" id="mySpan18" style="position:absolute; left:600;
+top:550; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="19" id="mySpan19" style="position:absolute; left:700;
+top:200; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="20" id="mySpan20" style="position:absolute; left:400;
+top:400; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="21" id="mySpan21" style="position:absolute; left:600;
+top:650; width:45; height:30">
+   <img src="pineapple2.gif" alt="" border="0" width="90" height="90"
+align="center" ></span><br>
+
+<span title="22" id="mySpan22" style="position:absolute; left:725;
+top:450; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="23" id="mySpan23" style="position:absolute; left:670;
+top:210; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="24" id="mySpan24" style="position:absolute; left:150;
+top:350; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="25" id="mySpan25" style="position:absolute; left:270;
+top:450; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="26" id="mySpan26" style="position:absolute; left:450;
+top:650; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="27" id="mySpan27" style="position:absolute; left:365;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="28" id="mySpan28" style="position:absolute; left:425;
+top:230; width:25; height:15">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="29" id="mySpan29" style="position:absolute; left:220;
+top:670; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="30" id="mySpan30" style="position:absolute; left:365;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="31" id="mySpan31" style="position:absolute; left:365;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="32" id="mySpan32" style="position:absolute; left:365;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="33" id="mySpan33" style="position:absolute; left:365;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="34" id="mySpan34" style="position:absolute; left:1000;
+top:560; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="35" id="mySpan35" style="position:absolute; left:1065;
+top:160; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="36" id="mySpan36" style="position:absolute; left:965;
+top:360; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="37" id="mySpan37" style="position:absolute; left:1165;
+top:660; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="38" id="mySpan38" style="position:absolute; left:665;
+top:550; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="39" id="mySpan39" style="position:absolute; left:665;
+top:460; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="40" id="mySpan40" style="position:absolute; left:865;
+top:460; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="41" id="mySpan41" style="position:absolute; left:665;
+top:560; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="42" id="mySpan42" style="position:absolute; left:965;
+top:260; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="43" id="mySpan43" style="position:absolute; left:1065;
+top:360; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="44" id="mySpan44" style="position:absolute; left:1165;
+top:630; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="45" id="mySpan45" style="position:absolute; left:865;
+top:260; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="46" id="mySpan46" style="position:absolute; left:1165;
+top:260; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="47" id="mySpan47" style="position:absolute; left:1065;
+top:460; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="48" id="mySpan48" style="position:absolute; left:1000;
+top:560; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="49" id="mySpan49" style="position:absolute; left:885;
+top:560; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="50" id="mySpan50" style="position:absolute; left:1165;
+top:620; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="51" id="mySpan51" style="position:absolute; left:1000;
+top:600; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="52" id="mySpan52" style="position:absolute; left:1065;
+top:480; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="53" id="mySpan53" style="position:absolute; left:1105;
+top:600; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="54" id="mySpan54" style="position:absolute; left:985;
+top:630; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="55" id="mySpan55" style="position:absolute; left:1095;
+top:455; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="56" id="mySpan56" style="position:absolute; left:900;
+top:340; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="57" id="mySpan57" style="position:absolute; left:895;
+top:240; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="58" id="mySpan58" style="position:absolute; left:1165;
+top:640; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="59" id="mySpan59" style="position:absolute; left:1065;
+top:210; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="60" id="mySpan60" style="position:absolute; left:1145;
+top:170; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+<span title="61" id="mySpan61" style="position:absolute; left:885;
+top:180; width:45; height:30">
+   <img src="mountains.gif" alt="" border="0" width="75" height="75"
+align="center" ></span><br>
+
+
+
+</body>
+</html>
