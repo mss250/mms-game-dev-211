@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+
+</head>
+
+<body id="myBody" style="background-repeat:repeat; background-size:
+100%" background="desert2.gif">
+
+<!DOCTYPE html>
+<html>
+    <audio src="lion.wav" autoplay </audio>
+  </body>
+</html><!DOCTYPE html>
+<html>
+    <audio src="lion.wav" autoplay </audio>
+  </body>
+</html>
+
+<script type="text/javascript">
+
+function startgame() {
+  var txt;
+  if (confirm("You are the LION. Try to hit the SLOTH and collect pineapples without hitting the mountains Start the game?")) {
+    txt = "You pressed OK!";
+    location = 'final-game-felicia.html'
+  } else {
+    txt = "Goodbye!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+
+
+  startgame()
+
+</script>
+
+</body>
+</html>
